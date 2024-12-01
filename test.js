@@ -17,6 +17,10 @@ const app = express();
 app.use(express.json());
 
 
+app.get('/',(req,res) => {
+    res.send("welcome in node js project");
+});
+
 app.get('/hello',(req,res) => {
     res.send("hello");
 });
