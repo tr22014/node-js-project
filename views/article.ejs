@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All articles page:</h1>
+    <hr />
+
+    <div style="background-color: orange; padding: 10px; border-radius: 8px;">
+        <% for( let article of allArticles ) { %>
+        <h1 style="background: blue;"><%=  article.title %></h1>
+        <br />
+        <h5 style="background: rgb(255, 0, 0);"><%=  article.body %></h5>
+        <br />
+        <h3 style="background: rgb(34, 176, 74);"><%=  article.id %></h3>
+        <% } %>
+    </div>
+</body>
+</html>
